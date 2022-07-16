@@ -1,0 +1,41 @@
+set recolor true
+set adjust-open width
+set window-title-basename "true"
+set selection-clipboard "clipboard"
+
+set notification-error-bg       "#ff5555" # Red
+set notification-error-fg       "#abb2bf" # Foreground
+set notification-warning-bg     "#ffb86c" # Orange
+set notification-warning-fg     "#44475a" # Selection
+set notification-bg             "#1e222a" # Background
+set notification-fg             "#abb2bf" # Foreground
+
+set completion-bg               "#1e222a" # Background
+set completion-fg               "#5c6370" # Comment
+set completion-group-bg         "#1e222a" # Background
+set completion-group-fg         "#5c6370" # Comment
+set completion-highlight-bg     "#44475a" # Selection
+set completion-highlight-fg     "#abb2bf" # Foreground
+
+set index-bg                    "#1e222a" # Background
+set index-fg                    "#abb2bf" # Foreground
+set index-active-bg             "#44475a" # Current Line
+set index-active-fg             "#abb2bf" # Foreground
+
+set inputbar-bg                 "#1e222a" # Background
+set inputbar-fg                 "#abb2bf" # Foreground
+set statusbar-bg                "#1e222a" # Background
+set statusbar-fg                "#abb2bf" # Foreground
+
+set highlight-color             "#ffb86c" # Orange
+set highlight-active-color      "#ffb86c" # Orange
+
+set default-bg                  "#1e222a" # Background
+set default-fg                  "#abb2bf" # Foreground
+
+set render-loading              true
+set render-loading-fg           "#1e222a" # Background
+set render-loading-bg           "#abb2bf" # Foreground
+
+set recolor-lightcolor          "#1e222a" # Background
+set recolor-darkcolor           "#abb2bf" # Foreground

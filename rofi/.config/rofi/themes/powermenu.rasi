@@ -1,0 +1,155 @@
+configuration {
+    show-icons:               false;
+    disable-history:          false;
+    click-to-exit:            true;
+    location:                 0;
+}
+
+@import "colors.rasi"
+
+* {
+    font:                     "JetBrains Mono Nerd Font 10";
+    background-color:         @background;
+}
+
+window {
+    border:                   4px;
+    border-color:             @brdr;
+    border-radius:            0px;
+    width:                    450px;
+    height:                   308px;
+}
+
+prompt {
+    spacing:                  0;
+    border:                   0;
+    border-radius:            8px;
+    background-color:         @foreground;
+    text-color:               @background-alt;
+    padding:                  6px 14px 6px 14px;
+    font:                     "Iosevka Nerd Font 10";
+}
+
+dummy {
+    spacing:                  0;
+    border:                   0;
+}
+
+case-indicator {
+    spacing:                  0;
+    text-color:               @foreground;
+}
+
+inputbar {
+    spacing:                  0px;
+    text-color:               @foreground;
+    border:                   0px;
+    border-color:             @selected;
+    border-radius:            0px;
+    children:                 [ dummy,prompt,dummy ];
+}
+
+mainbox {
+    border:                   0px;
+    border-color:             @selected;
+    spacing:                  15px;
+    padding:                  30px;
+}
+
+listview {
+    lines:                    7;
+    columns:                  1;
+    fixed-height:             0;
+    border:                   0px;
+    border-color:             @foreground;
+    spacing:                  5px;
+    scrollbar:                false;
+    padding:                  5px 0px 0px;
+}
+
+element-text, element-icon {
+    background-color:         inherit;
+    text-color:               inherit;
+}
+
+element {
+    border:                   0px;
+    padding:                  8px;
+}
+element normal.normal {
+    background-color:         @background;
+    text-color:               @foreground;
+}
+element normal.urgent {
+    background-color:         @background;
+    text-color:               @off;
+}
+element normal.active {
+    background-color:         @background;
+    text-color:               @on;
+}
+element selected.normal {
+    background-color:         @selected;
+    text-color:               @foreground;
+    border:                   0px;
+    border-radius:            8px;
+    border-color:             @selected;
+}
+element selected.urgent {
+    background-color:         @background;
+    text-color:               @off;
+}
+element selected.active {
+    background-color:         @background;
+    text-color:               @selected;
+}
+element alternate.normal {
+    background-color:         @background;
+    text-color:               @foreground;
+}
+element alternate.urgent {
+    background-color:         @background;
+    text-color:               @foreground;
+}
+element alternate.active {
+    background-color:         @background;
+    text-color:               @foreground;
+}
+
+button {
+    margin:                   5px 10px 0px 10px;
+    horizontal-align:         0.5;
+    vertical-align:           0.5;
+    padding:                  8px;
+    background-color:         @background-alt;
+    text-color:               @foreground;
+    border:                   0px;
+    border-radius:            8px;
+    border-color:             @selected;
+}
+
+button selected {
+    background-color:         @background-alt;
+    text-color:               @foreground;
+    border:                   0px;
+    border-radius:            8px;
+    border-color:             @selected;
+}
+
+scrollbar {
+    width:                    4px;
+    border:                   0px;
+    handle-color:             @foreground;
+    handle-width:             8px;
+    padding:                  0;
+}
+
+message {
+    border:                   0px;
+    border-color:             @selected;
+    padding:                  1px;
+}
+
+textbox {
+    text-color:               @foreground;
+}

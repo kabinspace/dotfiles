@@ -1,0 +1,30 @@
+.weather {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: $background-alt2;
+  border-radius: 12px;
+  padding: 3rem;
+}
+.weather-day {
+  font-family: Comic Mono;
+  font-weight: bold;
+  font-size: 2em;
+  color: $foreground;
+}
+.temp-region {
+  font-family: Comic Mono;
+  font-size: 1.5em;
+  color: $foreground;
+}
+.weather-icon {
+  font-size: 5em;
+}
+.temperature {
+  font-family: Iosevka Medium;
+  font-size: 1.5em;
+  color: $foreground;
+}
+.weather-stat {
+  font-family: Comic Mono;
+  font-size: 1.5em;
+  color: $foreground;
+}

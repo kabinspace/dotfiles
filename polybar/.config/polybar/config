@@ -1,0 +1,196 @@
+[colors]
+background = #1a1b26
+background-alt = #444
+foreground = #dfdfdf
+foreground-alt = #5f5f5f
+primary = #ffb52a
+secondary = #e60053
+power = #f7768e
+alert = #bd2c40
+
+[bar/example]
+font-0 = fixed:pixelsize=12;2
+font-1 = Font Awesome 6 Free:pixelsize=12;2
+font-2 = Font Awesome 6 Free Solid:pixelsize=12;2
+font-3 = Font Awesome 6 Brands:pixelsize=12;2
+
+width = 100%
+height = 35
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+enable-ipc = true
+
+; bottom=true
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = none
+
+padding-left = 4
+padding-right = 4
+
+module-margin-left = 2
+module-margin-right = 2
+
+modules-left = bspwm
+modules-center = spotify spotify-prev spotify-play-pause spotify-next
+modules-right = xkeyboard filesystem pulseaudio wlan battery temperature date powermenu
+
+tray-padding = 2
+tray-position = right
+
+;tray-background = #0063ff
+
+wm-restack = bspwm
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+cursor-click = pointer
+;cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+label-mounted =   %free%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/bspwm]
+type = internal/bspwm
+label-focused = %icon%
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 2
+label-occupied = %icon%
+label-occupied-padding = 2
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+label-empty = %icon%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+
+# [module/mpd]
+# type = internal/mpd
+# format-online =  <icon-prev> <icon-stop> <toggle> <icon-next> <label-song>
+# icon-prev = "  "
+# icon-stop = "  "
+# icon-play = "  "
+# icon-pause = "  "
+# icon-next = "  "
+# label-song-ellipsis = true
+
+[module/wlan]
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+format-connected =   Connected
+label-connected = %essid%
+format-disconnected =   Disconnected
+format-disconnected-foreground = ${colors.foreground-alt}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <label-volume>
+label-volume =   %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted =   Muted
+label-muted-foreground = #666
+
+[module/alsa]
+type = internal/alsa
+format-volume = <label-volume>
+label-volume =   %percentage%%
+label-volume-foreground = ${root.foreground}
+format-muted-prefix = "  "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted =  Muted
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 98
+format-charging =   <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full-prefix = "  "
+format-full-prefix-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+
+[module/date]
+type = internal/date
+interval = 5
+time =   %I:%M %p
+time-alt =   %Y-%m-%d
+label = %date% %time%
+
+[module/powermenu]
+type = custom/menu
+expand-right = true
+format-spacing = 1
+label-open = 
+label-open-foreground = ${colors.power}
+label-close = cancel
+label-close-foreground = ${colors.power}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+menu-0-0 = reboot
+menu-0-0-exec = reboot
+menu-0-1 = power off
+menu-0-1-exec = poweroff
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
+; spotify
+
+[module/spotify]
+type = custom/script
+tail = true
+; prefix symbol is shown before the text
+format-prefix = " "
+format = <label>
+exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+
+# [module/spotify-prev]
+# type = custom/script
+# exec = echo ""
+# format = <label>
+# click-left = playerctl previous spotify
+
+# [module/spotify-play-pause]
+# type = custom/ipc
+# hook-0 = echo ""
+# hook-1 = echo ""
+# initial = 1
+# click-left = playerctl play-pause spotify
+
+# [module/spotify-next]
+# type = custom/script
+# exec = echo ""
+# format = <label>
+# click-left = playerctl next spotify

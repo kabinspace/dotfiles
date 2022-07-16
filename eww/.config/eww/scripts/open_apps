@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Open Applications
+FILE="$HOME/.cache/eww_launch.xyz"
+EWW="$HOME/.local/bin/eww -c $HOME/.config/eww"
+cmd="xdg-open"
+
+if [[ "$1" == "--firefox" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && firefox &
+
+elif [[ "$1" == "--youtube" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && $cmd "https://youtube.com" &
+
+elif [[ "$1" == "--github" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && $cmd "https://github.com" &
+
+elif [[ "$1" == "--reddit" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && $cmd "https://reddit.com" &
+
+elif [[ "$1" == "--twitch" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && $cmd "https://twitch.com" &
+
+elif [[ "$1" == "--discord" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && discord &
+
+elif [[ "$1" == "--spotify" ]]; then
+  ${EWW} close-all && rm -rf "$FILE" && spotify &
+fi

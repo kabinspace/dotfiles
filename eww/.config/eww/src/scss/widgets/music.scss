@@ -1,0 +1,44 @@
+.music-player {
+  background-color: $background;
+  padding: 10 1.5rem 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 0.5rem;
+}
+.album_art {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin: 2rem 1rem 1.5rem 1rem;
+  padding: 9.5rem;
+}
+
+.artist {
+  font-family: Comic Mono;
+  font-weight: bold;
+  color: $foreground;
+  font-size: 1.4em;
+}
+.song {
+  font-family: Comic Mono;
+  font-size: 1.3em;
+  color: $foreground;
+  margin-top: -5px;
+}
+.btn_prev,
+.btn_play,
+.btn_next {
+  font-family: JetBrainsMono Nerd Font;
+}
+.btn_prev {
+  color: $foreground;
+  font-size: 2.8em;
+}
+.btn_play {
+  color: $foreground;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+.btn_next {
+  color: $foreground;
+  font-size: 2.8em;
+}

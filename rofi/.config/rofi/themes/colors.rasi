@@ -1,0 +1,11 @@
+* {
+  background:       #1e222a;
+  background-alt:   #2c323c;
+  brdr:             #abb2bf;
+  foreground:       #abb2bf;
+  foresel:          #67afc1;
+  selected:         #2c323c;
+  urgent:           #e06c75;
+  on:               #87a181;
+  off:              #d88B9f;
+}

@@ -1,0 +1,19 @@
+.quote {
+  background-color: $background;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin: 0.5rem;
+}
+.quote-text {
+  font-family: Comic Mono;
+  padding: 2.4rem 0.5rem 1rem 0.5rem;
+  font-size: 1.5em;
+  color: $foreground;
+}
+.quote-author {
+  font-family: Comic Mono;
+  font-size: 1.6em;
+  color: $foreground;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+}

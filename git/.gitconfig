@@ -1,0 +1,36 @@
+[user]
+  name = kabinspace
+  email = kabinkarki555@gmail.com
+  signingkey = 943EE0B688C5FADF76E13487CBC4ED313AC9883E
+
+[commit]
+  gpgSign = true
+
+[tag]
+  gpgSign = true
+
+# Delta
+[core]
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  line-numbers = true
+  syntax-theme = TwoDark
+  line-numbers-left-style = "#abb2bf"
+  line-numbers-right-style = "#abb2bf"
+  hunk-header-decoration-style = white box
+  line-numbers-minus-style = "#fc6544"
+  line-numbers-plus-style = "#72cc32"
+  line-numbers-zero-style = "#abb2bf"
+  file-style = bold yellow ul
+  whitespace-error-style = reverse white
+		
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default

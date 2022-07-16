@@ -1,0 +1,42 @@
+.applications {
+  background-color: $background;
+  color: $foreground;
+  border-radius: 12px;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.app-firefox,
+.app-reddit,
+.app-telegram,
+.app-github,
+.app-code,
+.app-discord,
+.app-spotify {
+  padding: 1.75rem;
+}
+.app-firefox {
+  font-size: 3em;
+}
+.app-discord {
+  font-family: "Font Awesome 5 Free";
+  font-size: 3em;
+}
+.app-discord {
+  font-size: 3em;
+}
+.app-reddit {
+  font-size: 3.5em;
+}
+.app-telegram {
+  font-size: 3em;
+}
+.app-github {
+  font-size: 3.3em;
+}
+.app-spotify {
+  font-size: 3em;
+}
+.app-code {
+  font-family: "Font Awesome 5 Free";
+  font-size: 3em;
+}
