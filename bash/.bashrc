@@ -3,6 +3,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Disable background highlighting on directories
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+
 # Starship shell
 eval "$(starship init bash)"
 
