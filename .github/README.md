@@ -1,15 +1,8 @@
 <div align="center">
-   <p></p>
-   <a href="https://github.com/janleigh/dotfiles/stargazers">
-      <img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?color=c9cbff&labelColor=1C2325&style=for-the-badge">
-   </a>
-   <a href="https://github.com/janleigh/dotfiles/issues">
-      <img src="https://img.shields.io/github/last-commit/kabinspace/dotfiles?color=9ece6a&labelColor=1C2325&style=for-the-badge">
-   </a>
-   <a href="../LICENSE">
-      <img src="https://img.shields.io/github/license/kabinspace/dotfiles?color=ffb29b&labelColor=1C2325&style=for-the-badge">
-   </a>
-   <br>
+<img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?color=c9cbff&labelColor=1C2325&style=for-the-badge">
+<img src="https://img.shields.io/github/last-commit/kabinspace/dotfiles?color=9ece6a&labelColor=1C2325&style=for-the-badge">
+<img src="https://img.shields.io/github/license/kabinspace/dotfiles?color=ffb29b&labelColor=1C2325&style=for-the-badge">
+<br>
 </div>
 
 ## 🌿 Information
