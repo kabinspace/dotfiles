@@ -1,8 +1,7 @@
 <div align="center">
-<img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?color=cba6f7&labelColor=1C2325&style=for-the-badge">
-<img src="https://img.shields.io/github/last-commit/kabinspace/dotfiles?color=9ece6a&labelColor=1C2325&style=for-the-badge">
-<img src="https://img.shields.io/github/license/kabinspace/dotfiles?color=ffb29b&labelColor=1C2325&style=for-the-badge">
-<br>
+<img src="https://img.shields.io/github/last-commit/kabinspace/dotfiles?style=for-the-badge&logo=github&color=a6da95&logoColor=D9E0EE&labelColor=302D41"/>
+<img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?style=for-the-badge&logo=dropbox&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/>
+<img src="https://img.shields.io/github/license/kabinspace/dotfiles?style=for-the-badge&logo=powerpages&color=cba6f7&logoColor=D9E0EE&labelColor=302D41"/>
 </div>
 
 ## 🌿 Information
