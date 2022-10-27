@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?color=c9cbff&labelColor=1C2325&style=for-the-badge">
+<img src="https://img.shields.io/github/repo-size/kabinspace/dotfiles?color=cba6f7&labelColor=1C2325&style=for-the-badge">
 <img src="https://img.shields.io/github/last-commit/kabinspace/dotfiles?color=9ece6a&labelColor=1C2325&style=for-the-badge">
 <img src="https://img.shields.io/github/license/kabinspace/dotfiles?color=ffb29b&labelColor=1C2325&style=for-the-badge">
 <br>
