@@ -12,7 +12,7 @@ Control="MPD"
 # Saves covers here
 Cover=/tmp/cover.png
 # If cover not found in metadata use this instead
-bkpCover=~/.config/eww/dashboard/assets/fallback.png
+bkpCover=~/.config/eww/assets/fallback.png
 # MPD music directory
 mpddir=~/Music
 
