@@ -20,3 +20,6 @@ export PATH="$PATH:/home/space/.local/bin"
 if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
+
+# Specify the base directory for config files
+export XDG_CONFIG_HOME="$HOME/.config"

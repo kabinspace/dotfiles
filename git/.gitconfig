@@ -1,7 +1,7 @@
 [user]
   name = kabinspace
-  email = kabinkarki555@gmail.com
-  signingkey = 943EE0B688C5FADF76E13487CBC4ED313AC9883E
+  email = kabinspace@gmail.com
+  signingkey = 47A04EE8BD44E101409ED1DE8EF060F656047E56
 
 [commit]
   gpgSign = true
