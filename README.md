@@ -6,7 +6,7 @@
 
 ## 🌿 Information
 
-<img src="assets/preview.jpg" alt="Rice Showcase" align="right" width="400px">
+<img src=".github/assets/preview.jpg" alt="Rice Showcase" align="right" width="400px">
 
 - **Operating System:** [arch](https://archlinux.org/)
 - **Window Manager:** [bspwm](https://github.com/baskerville/bspwm)
