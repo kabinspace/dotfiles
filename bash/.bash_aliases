@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# Aliases
+# aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias la='ls -A'
 alias chmox='chmod +x'
 
-# Apps
+# apps
 alias nv='nvim'
 alias nf='neofetch'
 alias ht='htop'
@@ -15,7 +15,7 @@ alias lg='lazygit'
 alias xo='xdg-open'
 alias calc='calcurse'
 
-# Git
+# git
 alias ga="git add"
 alias gcl="git clone"
 alias gcm="git commit -m"
@@ -33,11 +33,14 @@ alias gra='git remote add'
 alias grr='git remote rm'
 alias gsw='git switch'
 
-# Cd
+# cd
 alias ..='cd ..'
 alias ....='cd ../..'
 alias ......='cd ../../..'
 alias ........='cd ../../../..'
+
+# isolated nvim config
+alias astronvim="NVIM_APPNAME=astronvim nvim"
 
 # Suffix alias for filetypes
 command_not_found_handle() {
