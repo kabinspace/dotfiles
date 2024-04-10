@@ -116,6 +116,12 @@ super + Return
 super + @space
   rofi -show drun
 
+super + alt + @space
+  rofi -show run
+
+super + shift + @space
+  rofi -show window
+
 # Make sxhkd reload its configuration files:
 super + Escape
   pkill -USR1 -x sxhkd
